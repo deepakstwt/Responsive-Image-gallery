@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif ;
+    }
+    h1 {
+        font-size: 3em; /* Thoda bada size for that grand look */
+        text-align: center;
+        color: #333; /* Ek dark color */
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Thoda sa text shadow for depth */
+    }
+    
+    /* .container{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center ;
+        justify-content: center ;
+        padding: 50px;
+    } */
+    .container {
+        width: 80%; /* Gallery ko thoda chhota aur bada dikhane ke liye */
+        margin: 0 auto; /* Center me rakhne ke liye */
+        background-color: #f5f5f5; /* Ek light background color add karde */
+        border-radius: 10px; /* Thoda sa rounded corners for a modern look */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Thoda sa drop shadow for depth */
+        padding: 30px; /* Padding thoda kam karde */
+    }
+    
+
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr) );
+        grid-gap: 30px;
+
+    }
+    .gallery a {
+        overflow: hidden; /* Image overflow ko hide karega */
+        border-radius: 8px; /* Aur ek chhota sa rounded border */
+        transition: transform 0.3s ease; /* Hover pe thoda sa zoom effect */
+    }
+    
+    .gallery a:hover {
+        transform: scale(1.05); /* Zoom effect on hover */
+    }
+    
+    /* .gallery img{
+        width: 100%;
+
+
+    } */
